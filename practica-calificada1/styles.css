@@ -1,0 +1,30 @@
+h1{
+    color: white;
+}
+
+.subtitulos{
+    color: brown;
+    font-size: 26px;
+}
+#subtitulos1 {
+    color: blue;
+}
+
+.card{
+
+
+
+    background-color: #033268;
+    color: white;
+}
+h1 {
+    font-size: 25px;
+}
+h2{
+    font-size: 15px;
+}
+.correo{
+    color: red;
+    font-size: 20px;
+
+}
