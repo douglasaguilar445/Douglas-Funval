@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1{
+font-family: "Lobster Two";
+font-size: 50px;
+color: white
+}
+
+.contenedor-papa{
+ background-color: black;
+  border: 1px solid whitesmoke;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  border-radius: 2%;
+}
+
+input[ type="text"],
+input[ type="password"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(34, 33, 33);
+  border: 1px solid #444;
+  color: white;
+  border-radius: 4px;
+}
+
+.facebook {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* espacio entre icono y texto */
+  text-decoration: none;
+  color: #1877f2; /* azul Facebook, por ejemplo */
+  font-weight: bold;
+}
+
+.boton-login{
+  width: 325px;
+background-color: #0095f6;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.separador-de-o{
+display: flex;
+  align-items: center;
+  margin: 20px;
+}
+.separador-de-o span {
+flex: 1;
+  height: 1px;
+  background-color: #444;
+}
+.separador-de-o p {
+ margin: 0 10px;
+  color: #888;
+}
+
+
+.facebook{
+color: #1877f2;
+  display: block;
+  margin: 10px;
+}
+
+.no-se{
+font-size: 12px;
+  color: white;
+  font-weight: bold;
+}
+
+.cajita-nuevo{
+ background-color: black;
+  border: 1px solid #333;
+  padding: 10px;
+  width: 360px;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 2%;
+}
+.cajita-nuevo a {
+color: #0095f6;
+}
+
+
