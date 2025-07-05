@@ -1,0 +1,124 @@
+
+/*
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body{
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.contenedor {
+    border: red 2px solid;
+    height: 600px;
+    width: 300px;
+    color: white;
+    position: relative;
+    
+}
+
+.caja{
+height: 100px;
+width: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.caja1{
+background-color: blueviolet;
+position: absolute;
+bottom: 0;
+right: 0;
+}
+
+.caja2{
+background-color: brown;
+}
+
+.caja3{
+background-color: darkblue;
+}
+
+.caja4{
+background-color: darkmagenta;
+position: fixed;
+}
+
+.caja5{
+background-color:chocolate;
+}
+*/
+
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: orange;
+      padding: 10px;
+      position: sticky;
+      top: 0; /* 👈 Esto hace que se quede arriba */
+      z-index: 1000; /* Para que no quede oculto detrás de otros elementos */
+    }
+
+    section {
+      padding: 20px;
+      height: 1500px; /* Forzamos mucho contenido para hacer scroll */
+      background-color: #f2f2f2;
+    }
+
+
+.contenedor {
+  height: 300px;
+  overflow-y: scroll;
+  border: 2px solid red;
+}
+
+.sticky-box {
+  position: sticky;
+  top: 0;
+  background: orange;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.contenido-largo p {
+  margin: 20px;
+}
+
+.caja1 {
+  background-color: green;
+  position: static; /* Es lo mismo que no poner nada */
+}
+
+.contenedor {
+      width: 350px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 2px solid #000;
+      background-color: #eee;
+    }
+
+    .caja {
+      position: static; /* ← posición por defecto */
+      background-color: cornflowerblue;
+      color: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }

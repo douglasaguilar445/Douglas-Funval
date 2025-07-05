@@ -1,0 +1,90 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,
+body{
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container{
+border: 2px solid red;
+padding: 30px;
+display: flex;
+background-color: beige;
+justify-content: space-between;
+gap: 40px;
+}
+
+.cajas {
+display: grid;
+grid-template-columns: repeat(2, 100px);
+grid-template-rows: repeat(3);
+gap: 15px;
+    }
+
+.caja {
+border: 2px solid #ff6969;
+display: flex;
+align-items: center;
+justify-content: center;
+    }
+
+.banner {
+width: 200px;
+height: 300px;
+border: 2px solid #ff6969;
+display: flex;
+align-items: center;
+justify-content: center;
+    }
+
+/* Extra small (xs) – menores a 576px */
+@media (max-width: 575.98px) {
+  /* estilos pantallas menores a 576px */
+  .container {
+    flex-direction: column;
+  }
+  .caja {
+    background-color: crimson;
+  }
+}
+
+/* Small (sm) – 576px o más */
+@media (min-width: 576px) {
+  .caja {
+    background-color: darkblue;
+    color: white;
+  }
+  .container {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Medium (md) – 768px o más */
+@media (min-width: 768px) {
+  .caja {
+    background-color: blue;
+  }
+}
+
+/* Large (lg) – 992px o más */
+@media (min-width: 992px) {
+  .caja {
+    background-color: blueviolet;
+  }
+}
+
+/* Extra large (xl) – 1200px o más */
+@media (min-width: 1200px) {
+}
+
+/* Extra extra large (xxl) – 1400px o más */
+@media (min-width: 1400px) {
+}

@@ -1,0 +1,135 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      font-family: Arial;
+    }
+
+header {
+      background-color: darkred;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-style: italic;
+    }
+    
+nav ul {
+    background-color: darkgreen;
+    padding: 10px;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 20px;
+    }
+
+ nav ul li a {
+      color:white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  height: 700px;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero h2 {
+  font-size: 7rem;
+  margin-bottom: 10px;
+  color: darkred;
+  font-style: oblique;
+}
+
+.hero p {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: darkred;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: darkgreen;
+  color: white;
+  font-size: 3rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-image {
+  width: 400px;
+  height: auto;
+}
+
+ .info {
+      background-color: darkgreen;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .info h3 {
+      margin-bottom: 10px;
+      color: white;
+      font-size: 3rem;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .info p, .info ul {
+      margin-bottom: 15px;
+      color: white;
+      text-align: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+
+    .info ul {
+      padding-left: 20px;
+      list-style: none;
+    }
+
+.menu{
+  font-size: 5rem;
+  margin-bottom: 10px;
+  color: darkred;
+  font-style: oblique;
+  text-align: center;
+}
+
+.cards-container {
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 450px);
+  place-items: center;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+    footer {
+      background-color: darkred;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }

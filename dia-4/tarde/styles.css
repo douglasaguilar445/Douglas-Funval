@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+nav {
+  display: flex;
+  gap: 8px;
+}
+header {
+  background-color: white;
+  height: 10%;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  display: flex;
+  gap: 16px;
+}
+li {
+  list-style: none;
+}s
+.img-perrito {
+  border-radius: 100%;
+}
+main {
+  background-color: #f5efef;
+  display: flex;
+  flex-direction: column;
+}
+.blurred-edges {
+  height: 300px;
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    black 60%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.hero {
+  display: flex;
+}
+.msg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.hero-titule {
+  font-size: 80px;
+  color: brown;
+}
+.hero-pa {
+  font-size: 20px;
+  color: brown;
+}
+.hero-btn {
+  padding: 8px;
+  background-color: brown;
+  color: white;
+  border: none;
+}
+.cards-container {
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  place-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+footer {
+  background-color: white;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
