@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="all">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css"/>
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="bg-blue-900 text-white font-sans dark:bg-black">
+
+    <!-- HEADER -->
+<header class="flex items-center justify-between px-6 py-4 bg-red-600 dark:bg-black">
+  <img src="doug.png" alt="logo" class="h-20">
+
+  <!-- BOTÓN HAMBURGUESA -->
+  <button id="toggleBtn" class="ml-auto md:hidden justify-between px-6 py-4">
+    <svg xmlns="http://www.w3.org/2000/svg"
+      fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+  </button>
+
+  <!--MENÚ DE NAVEGACIÓN -->
+  <nav id="navMenu" class="space-x-6 hidden md:block">
+    <a href="#about" class="hover:text-yellow-300"><strong>ABOUT ME</strong></a>
+    <a href="#skills" class="hover:text-yellow-300"><strong>SKILLS</strong></a>
+    <a href="#projects" class="hover:text-yellow-300"><strong>PROJECTS</strong></a>
+    <a href="proyectos.html" class="hover:text-yellow-300"><strong>PROJECTS PAGE</strong></a>
+  </nav>
+
+      <button class="bg-yellow-400 text-black font-semibold px-4 py-2 rounded-full hover:bg-yellow-200 hover:shadow-lg transition duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
+</svg>
+</button>
+    </header>
+
+    <!-- HERO -->
+    <section class="text-center py-20 bg-gradient-to-br from-blue-900 to-red-700 dark:from-gray-900 dark:to-black">
+      <h1 class="text-4xl font-bold">
+        I'm <span class="text-yellow-400">Doug</span><br />
+        <span class="text-white">Super Full Stack Developer</span>
+      </h1>
+      <img src="super.png" alt="" class="mx-auto mt-6 w-90 h-90 rounded-full border-4 border-yellow-400 dark:hidden"/>
+      <img src="bat.png" alt="" class="mx-auto mt-6 w-90 h-90 rounded-full border-4 border-yellow-400 hidden dark:block"/>
+      <button class="mt-6 bg-yellow-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-200 hover:shadow-lg transition duration-300">MY PROJECTS</button>
+    </section>
+
+
+    
+    <!-- ABOUT -->
+    <section id="about" class="py-20 text-center bg-blue-800 dark:bg-gray-900">
+      <h2 class="text-3xl font-bold text-yellow-400 mb-4">WHO AM I ?</h2>
+      <p class="max-w-xl mx-auto text-gray-300 px-4 text-2xl">
+        Hi, I'm Doug, a passionate and versatile Full Stack Developer with a strong focus on creating clean, scalable, and user-friendly web applications. With experience in both front-end and back-end technologies, I enjoy turning complex problems into elegant solutions.
+I specialize in technologies like JavaScript, HTML, CSS, and Tailwind, and I’m always exploring new tools and frameworks to stay at the cutting edge of development. Whether it's designing intuitive interfaces, I love being involved in the full lifecycle of a project — from idea to deployment.
+Beyond code, I'm a strong communicator and team player, committed to continuous learning and delivering high-quality work. I'm driven by curiosity, creativity, and a desire to build things that make a difference.
+Let’s create something great together.
+      </p>
+      <img src="bts.webp" alt="" class="mx-auto mt-6 w-90 h-90 rounded-full border-4 border-yellow-400"/>
+      <button class="mt-6 bg-yellow-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-200 hover:shadow-lg transition duration-300">SHOW MY PROJECTS</button>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-20 bg-blue-900 text-center dark:bg-black">
+  <h2 class="text-3xl font-bold text-yellow-400 mb-10">MY SKILLS</h2>
+
+  <!-- Aquí se cargarán dinámicamente las habilidades -->
+  <div id="contenedor-habilidades" class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center"></div>
+
+  <div class="mt-10 text-white">
+    <p class="text-xl font-bold">One Month Experience Working</p>
+    <button class="mt-4 bg-red-600 text-white px-4 py-2 rounded-full 
+    hover:bg-yellow-200 hover:shadow-lg transition duration-300 
+    dark:bg-yellow-400 dark:text-black"><strong>DOWNLOAD MY CV</strong></button>
+  </div>
+</section>
+<!-- cript principal con módulos -->
+<script type="module" src="./main.js"></script>
+
+
+    <!-- ADDITIONAL SKILLS -->
+    <section class="py-10  bg-blue-800 text-center dark:bg-gray-900">
+      <h3 class="text-yellow-400 text-xl mb-6">ADDITIONAL SKILLS</h3>
+      <div class="flex justify-center gap-6 flex-wrap px-4">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" class="w-10 h-10" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" class="w-10 h-10" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/premierepro/premierepro-original.svg" class="w-10 h-10" />
+      </div>
+    </section>
+
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-20 px-6">
+      <h2 class="text-3xl font-bold mb-6 text-yellow-400">MY SUPER PROJECTS</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white text-blue-900 p-4 rounded shadow dark:bg-gray-800 dark:text-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <img src="pr1.png" alt="Proyecto 1" class="mb-2 rounded h-50 w-65 shadow-2xs">
+        <h4 class="font-bold">project 1</h4>
+        <p class="text-sm">This is a page based on HTML structures and a little CSS. By creating it, I was able to improve my skills and gain control over HTML.</p>
+        <a href="http://127.0.0.1:5500/practica-calificada1/index.html" class="text-red-600 font-semibold dark:text-yellow-400 hover:bg-yellow-200 hover:shadow-lg transition duration-300" >See more</a>
+      </div>
+      <div class="bg-white text-blue-900 p-4 rounded shadow dark:bg-gray-800 dark:text-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <img src="pr2.png" alt="Proyecto 2" class="mb-2 rounded h-50 w-65 shadow-2xs">
+        <h4 class="font-bold">project 2</h4>
+        <p class="text-sm">In this project, the Instagram-style login was built in HTML and CSS to develop more skills and experience in HTML and CSS.</p>
+        <a href="http://127.0.0.1:5500/practica-calificada2/index.html" class="text-red-600 font-semibold dark:text-yellow-400 hover:bg-yellow-200 hover:shadow-lg transition duration-300">See more</a>
+      </div>
+      <div class="bg-white text-blue-900 p-4 rounded shadow dark:bg-gray-800 dark:text-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <img src="pr3.png" alt="Proyecto 3" class="mb-2 rounded h-50 w-65 shadow-2xs">
+        <h4 class="font-bold">project 3</h4>
+        <p class="text-sm">In this practice, a website was created with a modern structure and interface, based on HTML and CSS structures.</p>
+        <a href="http://127.0.0.1:5500/practica-calificada3/index.html" class="text-red-600 font-semibold dark:text-yellow-400 hover:bg-yellow-200 hover:shadow-lg transition duration-300">See more</a>
+      </div>
+    </div>
+    </section>
+
+
+
+    <!-- CONTACT -->
+<section class="py-20 bg-white text-red-600 text-center dark:bg-gray-900 dark:text-yellow-400">
+  <h2 class="text-3xl font-bold mb-10">LET’S HAVE A CHAT</h2>
+  <form action="https://formsubmit.co/douglas.aguilar.tejada2025@gmail.com" method="POST" class="max-w-md mx-auto space-y-6">
+    
+    <!-- Campos ocultos -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://formsubmit.co/thanks">
+
+    <!-- Campos visibles -->
+    <input type="text" name="name" placeholder="YOUR NAME" required class="w-full p-4 bg-gray-200 rounded dark:bg-gray-800" />
+    <input type="email" name="email" placeholder="EMAIL ADDRESS" required class="w-full p-4 bg-gray-200 rounded dark:bg-gray-800" />
+    <textarea name="message" placeholder="CHAT HERE" required class="w-full p-4 bg-gray-200 rounded dark:bg-gray-800"></textarea>
+    <button class="w-full bg-yellow-400 text-black p-4 font-bold rounded hover:bg-yellow-200 hover:shadow-lg transition duration-300">
+      SUBMIT HERE
+    </button>
+  </form>
+</section>
+    <footer class="h-80 bg-red-600 flex flex-col items-center justify-center gap-3 p-4 dark:bg-black text-yellow-400"
+    >
+   
+        </div>
+        <h2 class="text-2xl font-semibold">Social Network</h2>
+        <ul class="flex flex-col gap-3 font-semibold text-xl ">
+          <li class="flex gap-3 hover:bg-yellow-200 hover:shadow-lg transition duration-300">
+  <a href="https://www.facebook.com" target="_blank" class="flex items-center gap-3 p-2">
+    <svg
+      class="w-6 h-6 text-blue-700 bg-white rounded-full"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+        clip-rule="evenodd"
+      />
+    </svg>
+    Facebook
+  </a>
+    </li>
+          <li class="flex gap-3 hover:bg-yellow-200 hover:shadow-lg transition duration-300">
+  <a href="https://twitter.com" target="_blank" class="flex items-center gap-3 p-2">
+    <svg
+      class="w-6 h-6 text-gray-800 bg-white"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"
+      />
+    </svg>
+    X
+  </a>
+    </li>
+          <li class="flex gap-3 hover:bg-yellow-200 hover:shadow-lg transition duration-300">
+  <a href="https://www.instagram.com" target="_blank" class="flex items-center gap-3 p-2">
+    <svg
+      class="w-6 h-6 text-amber-900 bg-white"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill="currentColor"
+        fill-rule="evenodd"
+        d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+        clip-rule="evenodd"
+      />
+    </svg>
+    Instagram
+  </a>
+    </li>
+          <li class="flex gap-3 hover:bg-yellow-200 hover:shadow-lg transition duration-300">
+  <a href="https://github.com/douglasaguilar445" target="_blank" class="flex items-center gap-3 p-2">
+    <svg
+      class="w-6 h-6 text-gray-800 bg-white rounded-full"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+        clip-rule="evenodd"
+      />
+    </svg>
+    GitHub
+  </a>
+    </li>
+
+        </ul>
+      </div>
+      thanks for visit my website
+    </footer>
+
+    <button class="fixed bottom-4 right-4 z-50 p-3 bg-black dark:bg-blue-700 text-black dark:text-white rounded-full shadow-lg" id="btn">
+  <!-- Superman logo (light mode) -->
+  <img src="bati.png" alt="Superman Logo" class="w-12  dark:hidden" />
+
+  <!-- Batman logo (dark mode) -->
+  <img src="supe.png" alt="Batman Logo" class="w-12 hidden dark:inline" />
+</button>
+    
+    <script>
+        let botonCambio = document.querySelector("#btn");
+        let todo = document.querySelector("#all");
+        botonCambio.addEventListener("click", function () {
+            todo.classList.toggle("dark");
+        });
+    </script>
+
+
+
+  </body>
+</html>

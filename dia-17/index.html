@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css" />
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen gap-6">
+ <!--
+   Botón 
+  <button id="btn" class="bg-green-800 text-white px-6 py-3 rounded-xl text-lg">
+    Día
+  </button>
+
+  Imagen de Fiona -
+  <img id="fiona" 
+       src="https://upload.wikimedia.org/wikipedia/en/d/d0/Fiona_standing_human.png" 
+       class="w-60 h-auto rounded-lg border-4 border-green-800" 
+       alt="Fiona" />
+-->
+<!--
+<form action="" id="formulario" class="flex bg-gray-200 flex-col p-4 gap-4">
+<label>Nombre:</label><br>
+    <input type="text" id="nombre"><br><br>
+
+    <label>Apellido paterno:</label><br>
+    <input type="text" id="apellido"><br><br>
+
+    <label>Edad:</label><br>
+    <input type="number" id="edad"><br><br>
+
+    <label>Nacionalidad:</label><br>
+    <input type="text" id="nacionalidad"><br><br>
+
+    <button type="submit">Enviar</button>
+  
+</form>
+
+ <select name="" id="selectorColor">
+      <option value="">Seleciona un color</option>
+      <option value="red">Rojo</option>
+      <option value="blue">Azul</option>
+      <option value="green">Verde</option>
+    </select>
+    <p id="colorTexto">elige un color</p>
+-->
+ 
+  <header class="p-4 flex justify-between items-center bg-white shadow-md">
+    <h1 class="text-4xl">Teacher Kevin Rodriguez</h1>
+    <button id="abrirModal" class="bg-blue-900 text-white rounded-full text-3xl w-10 h-10 flex items-center justify-center">+</button>
+  </header>
+
+  
+  <div class="bg-blue-900 p-6 text-white">
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm text-left">
+        <thead class="text-xs uppercase bg-gray-200 text-black">
+          <tr>
+            <th class="px-6 py-3">Nombre</th>
+            <th class="px-6 py-3">Edad</th>
+            <th class="px-6 py-3">País</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpoTabla" class="bg-white text-black">
+          <tr class="border-b">
+            <td class="px-6 py-4">Douglas</td>
+            <td class="px-6 py-4">21</td>
+            <td class="px-6 py-4">El Salvador</td>
+          </tr>
+          <tr class="border-b">
+            <td class="px-6 py-4">Jeff</td>
+            <td class="px-6 py-4">34</td>
+            <td class="px-6 py-4">Peru</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4">Jefferson</td>
+            <td class="px-6 py-4">19</td>
+            <td class="px-6 py-4">El Salvador</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
+    <div class="bg-white p-8 rounded-xl shadow-md w-96">
+      <h2 class="text-xl mb-4 font-bold text-center">Agregar persona</h2>
+      <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre" class="w-full p-2 mb-3 border rounded" required />
+        <input type="number" id="edad" placeholder="Edad" class="w-full p-2 mb-3 border rounded" required />
+        <input type="text" id="pais" placeholder="País" class="w-full p-2 mb-4 border rounded" required />
+        <button type="submit" class="w-full bg-blue-800 text-white p-2 rounded">Agregar</button>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+</html>
