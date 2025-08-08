@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Market</title>
+  <script src="main.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Colores similares a apps de delivery */
+    :root {
+      --primary: #FF3B30;
+      --secondary: #FF9500;
+      --accent: #34C759;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen">
+  <div class="max-w-7xl mx-auto px-4 py-6">
+    <!-- Header -->
+    <header class="mb-8 text-center">
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-[var(--primary)]">🛍️ Mini Market</h1>
+      <p class="text-gray-600 mt-2 text-lg">Tu tienda de confianza</p>
+    </header>
+
+    <!-- Productos -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-800">📦 Productos disponibles</h2>
+      <div id="productos-lista" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- JS generará productos aquí -->
+      </div>
+    </section>
+
+    <!-- Carrito -->
+<section class="mb-12 bg-white shadow-md rounded-lg p-6">
+  <h2 class="text-2xl font-semibold mb-4 text-gray-800">🛒 Carrito de Compras</h2>
+  <ul id="carrito-lista" class="mb-4 space-y-2"></ul>
+  <div class="flex justify-between items-center">
+    <strong>Total:</strong>
+    <span id="carrito-total" class="text-lg font-bold text-green-600">$0.00</span>
+  </div>
+  <button id="crear-carrito-btn" class="mt-4 bg-[var(--primary)] hover:bg-red-600 text-white font-semibold px-6 py-2 rounded shadow">
+    💸 Crear venta desde carrito
+  </button>
+</section>
+
+    <!-- Crear venta -->
+    <section class="mb-12 bg-white shadow-md rounded-lg p-6">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-800">🛒 Crear venta</h2>
+      <form id="venta-form" class="flex flex-col sm:flex-row gap-4 items-center">
+        <div class="flex-1 w-full">
+          <label for="producto" class="block text-sm font-medium mb-1">Producto:</label>
+          <select id="producto-select" class="w-full border rounded px-3 py-2 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"></select>
+        </div>
+
+        <div>
+          <label for="cantidad" class="block text-sm font-medium mb-1">Cantidad:</label>
+          <input type="number" id="cantidad-input" value="1" min="1" class="border rounded px-3 py-2 w-24 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[var(--primary)]">
+        </div>
+
+        <button type="submit" class="bg-[var(--primary)] hover:bg-red-600 text-white font-semibold px-6 py-2 rounded shadow">
+          Crear venta
+        </button>
+      </form>
+    </section>
+
+    <!-- Mis Ventas -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-gray-800">📄 Mis Ventas</h2>
+      <button onclick="verMisVentas()" class="mb-4 bg-[var(--accent)] hover:bg-green-700 text-white px-5 py-2 rounded shadow">
+        Ver mis ventas
+      </button>
+      <ul id="ventas-lista" class="list-disc pl-5 space-y-2 text-gray-700"></ul>
+    </section>
+  </div>
+</body>
+</html>
